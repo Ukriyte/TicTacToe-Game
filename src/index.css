@@ -1,0 +1,60 @@
+/* App.css */
+
+/* Set the background color to black */
+body {
+    background-color: #000;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Center the game board horizontally and vertically */
+  #root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Style the game board */
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Adjust the size of the grid columns */
+    grid-gap: 5px; /* Add spacing between squares */
+    border: 2px solid #00ff00; /* Green border for the game board */
+    padding: 10px; /* Add padding for spacing between the board and the border */
+    background-color: #000; /* Black background for the board */
+  }
+  
+  /* Style the squares */
+  .square {
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    border: 2px solid #00ff00; /* Green border for the squares */
+    color: #00ff00; /* Green text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .square:hover {
+    background-color: #00ff00; /* Green background on hover */
+  }
+  
+  /* Style the status message */
+  .status {
+    color: #00ff00; /* Green text color */
+    font-size: 24px;
+    margin-right: 300px; /* Add margin to separate the board from the status message */
+  }
+
+.restart-button {
+  color: #00ff00; /* Green text color */
+  font-size: 24px;
+  margin-left: 300px;
+  background-color: #000;
+}
+  
